@@ -14,26 +14,59 @@ if os.path.isfile('incidents.db'):
     print('\nBaza danych już istnieje, więc nie tworzę nowej.\n')
 else:
     chunksize = 10 ** 6
-    for chunk in tqdm(pd.read_csv(PATH_TO_FILE, chunksize=chunksize, low_memory=False)):
+    for chunk in tqdm(pd.read_csv(PATH_TO_FILE, usecols=['Agency Name', 'Complaint Type', 'Borough'],
+                                  chunksize=chunksize, low_memory=False)):
         chunk.columns = chunk.columns.str.strip().str.lower().str.replace(' ', '_').str.replace('(', '').str.replace(')',                                                                                                             '')
         # Jak tego na górze nie ma to pluje brzydkim, czerwonym komunikatem, więc lepiej jak jest. Służy to żeby zamienić
         # nazwy kolumn typu Big Data Jest Super na big_data_jest_super. Biblioteka pandas woli takie nazwy niż
         # duże litery i spacje. Tylko trzeba to uwzględnić w nazwach kolumn w kwerendach.
         chunk.to_sql('incidents', conn, if_exists='append')
 
-start_time_query = time.perf_counter()
-query = pd.read_sql('SELECT "complaint_type", COUNT("complaint_type") AS "frequency" '
-                    'FROM incidents  '
-                    'GROUP BY "complaint_type" '
-                    'ORDER BY COUNT(*) DESC '
-                    'LIMIT 5', conn)
+start_time_query_1 = time.perf_counter()
 
-end_time_query = time.perf_counter()
+query_1 = pd.read_sql('SELECT complaint_type, COUNT(complaint_type) AS frequency '
+                      'FROM incidents '
+                      'GROUP BY complaint_type '
+                      'ORDER BY COUNT(*) DESC '
+                      'LIMIT 1', conn)
+
+end_time_query_1 = time.perf_counter()
 
 print('-------najczęściej zgłaszane skargi-------')
-print(query)
-print('\nCzas: ', end_time_query - start_time_query)
+print(query_1)
+print('\nCzas: ', end_time_query_1 - start_time_query_1)
 print('------------------------------------------')
+
+start_time_query_2 = time.perf_counter()
+
+query_2 = pd.read_sql('SELECT t.borough, t.complaint_type, MAX(t.total) AS complaint_count '
+                      'FROM (SELECT borough, complaint_type, COUNT(complaint_type) AS total '
+                      'FROM incidents '
+                      'GROUP BY borough, complaint_type) AS t '
+                      'GROUP BY t.borough', conn)
+
+end_time_query_2 = time.perf_counter()
+
+print('\n-------najczęściej zgłaszane skargi w każdej dzielnicy-------')
+print(query_2)
+print('\nCzas: ', end_time_query_2 - start_time_query_2)
+print('------------------------------------------------------------')
+
+# Urzędy, do których najczęściej zgłaszano skargi
+start_time_query_3 = time.perf_counter()
+
+query_3 = pd.read_sql('SELECT "agency_name", COUNT("agency_name") AS "frequency" '
+                      'FROM incidents '
+                      'GROUP BY "agency_name" '
+                      'ORDER BY COUNT(*) DESC '
+                      'LIMIT 1', conn)
+end_time_query_3 = time.perf_counter()
+
+print('\n-------urzędy, do których najczęściej zgłaszano skargi-------')
+print(query_3)
+print('\nCzas: ', end_time_query_1 - start_time_query_1)
+print('-------------------------------------------------------------')
+
 
 
 
