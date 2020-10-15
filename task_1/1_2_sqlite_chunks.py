@@ -64,7 +64,7 @@ end_time_query_3 = time.perf_counter()
 
 print('\n-------urzędy, do których najczęściej zgłaszano skargi-------')
 print(query_3)
-print('\nCzas: ', end_time_query_1 - start_time_query_1)
+print('\nCzas: ', end_time_query_3 - start_time_query_3)
 print('-------------------------------------------------------------')
 
 
