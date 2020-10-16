@@ -6,7 +6,9 @@ from task_1.path import PATH_TO_FILE, PATH_TO_EXAMPLE_FILE
 
 start_database_read_data = time.perf_counter()
 
-data = pd.read_csv(PATH_TO_FILE, usecols=['Agency Name', 'Complaint Type', 'Borough'])
+data = pd.read_csv(PATH_TO_FILE, usecols=['Agency Name', 'Complaint Type', 'Borough'], dtype={"Agency Name": "category",
+                                                                                            "Complaint Type": "category",
+                                                                                            "Borough": "category"})
 data.columns = data.columns.str.strip().str.lower().str.replace(' ', '_').str.replace('(', '').str.replace(')', '')
 end_database_read_data = time.perf_counter()
 
@@ -93,17 +95,17 @@ print('-------------------------------------------------------------')
 WYNIKI
 
 -------czas wczytywania danych do pandas-------
-Czas:  123.95602638599999
+Czas:  114.830675631
 ------------------------------------------
 -------czas wpuszczania danych do bazy sqlite-------
-Czas:  60.74598841600002
+Czas:  58.275101112000016
 ------------------------------------------
 
 -------najczęściej zgłaszane skargi-------
         complaint_type  frequency
 0  Noise - Residential    2139470
 
-Czas:  34.096355959999983
+Czas:  31.237601444000006
 ------------------------------------------
 
 -------najczęściej zgłaszane skargi w każdej dzielnicy-------
@@ -115,14 +117,15 @@ Czas:  34.096355959999983
 4    Unspecified              HEATING
 5          BRONX  Noise - Residential
 
-Czas:  43.75251725800001
+Czas:  43.372081141999985
 ------------------------------------------------------------
 
 -------urzędy, do których najczęściej zgłaszano skargi-------
                        agency_name  frequency
 0  New York City Police Department    6308385
 
-Czas:  24.65032962800001
+Czas:  22.094404105000024
 -------------------------------------------------------------
+
 
 """

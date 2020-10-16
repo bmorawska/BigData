@@ -2,7 +2,9 @@ import time
 import pandas as pd
 from task_1.path import PATH_TO_FILE
 
-df = pd.read_csv(PATH_TO_FILE, usecols=['Agency Name', 'Complaint Type', 'Borough'])
+df = pd.read_csv(PATH_TO_FILE, usecols=['Agency Name', 'Complaint Type', 'Borough'], dtype={"Agency Name": "category",
+                                                                                            "Complaint Type": "category",
+                                                                                            "Borough": "category"})
 print(df.memory_usage(index=False, deep=True).sum())
 print(df.dtypes)
 
@@ -46,28 +48,37 @@ WYNIKI
 Noise - Residential    2139470
 Name: Complaint Type, dtype: int64
 
-Czas:  2.034412314000008
+Czas:  0.15980715799999246
 ------------------------------------------
 
 -------najczęściej zgłaszane skargi w każdej dzielnicy-------
-                    Complaint_Type  Complaint_Count
-Borough                                            
-BRONX          Noise - Residential           575361
-BROOKLYN       Noise - Residential           617491
-MANHATTAN      Noise - Residential           458422
-QUEENS         Noise - Residential           421524
-STATEN ISLAND     Street Condition           125674
-Unspecified                HEATING           282916
-
-Czas:  6.500596621
+                                                  Complaint_Type                                    Complaint_Count
+Borough                                                                                                            
+BRONX                                        Noise - Residential                                             575361
+BROOKLYN       0    Noise - Residential
+Name: Complaint Type,...  Noise - Residential    617491
+Name: Complaint ...
+MANHATTAN      0    Noise - Residential
+Name: Complaint Type,...  Noise - Residential    458422
+Name: Complaint ...
+QUEENS         0    Noise - Residential
+Name: Complaint Type,...  Noise - Residential    421524
+Name: Complaint ...
+STATEN ISLAND  0    Street Condition
+Name: Complaint Type, dt...  Street Condition    125674
+Name: Complaint Typ...
+Unspecified    0    HEATING
+Name: Complaint Type, dtype: cate...  HEATING    282916
+Name: Complaint Type, dtype:...
+Czas:  2.052715145999997
 ------------------------------------------------------------
 
 -------urzędy, do których najczęściej zgłaszano skargi-------
 New York City Police Department    6308385
 Name: Agency Name, dtype: int64
 
-Czas:  1.9665533730000107
+Czas:  0.1672891719999967
 -------------------------------------------------------------
 
-Memory - 5550556549 bytes = ~14.5 gigabytes
+Memory - 121028217 bytes = ~0.11 gigabytes
 """
