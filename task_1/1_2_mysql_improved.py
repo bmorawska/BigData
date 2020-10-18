@@ -42,19 +42,6 @@ print('-------czas wpuszczania danych do bazy mysql-------')
 print('Czas: ', end_database_insert_data - start_database_insert_data)
 print('------------------------------------------')
 
-"""
--------czas wpuszczania danych do bazy mysql-------
-
-Czas:  4220.1825219
----------------------------------------------------
-
-
--------czas wpuszczania danych do bazy mysql-------
-
-Czas:  967.5188049120001
-------------------------------------------
-"""
-
 # Najczęściej składane skargi
 start_time_query_1 = time.perf_counter()
 
@@ -73,25 +60,6 @@ print('\n-------najczęściej zgłaszane skargi-------')
 print(df_query1)
 print('\nCzas: ', end_time_query_1 - start_time_query_1)
 print('------------------------------------------')
-
-"""
--------najczęściej zgłaszane skargi-------
-0  Noise - Residential  2128035
-Czas:  71.9516774
-------------------------------------------
--------najczęściej zgłaszane skargi-------
-[...]
-Czas:  130.62204229999952
-------------------------------------------
-
-
--------najczęściej zgłaszane skargi-------
-                     0        1
-0  Noise - Residential  1626400
-
-Czas:  97.41855300799989
-------------------------------------------
-"""
 
 # Najczęściej składane skargi w każdej dzielnicy
 start_time_query_2 = time.perf_counter()
@@ -123,38 +91,6 @@ print(df_query2)
 print('\nCzas: ', end_time_query_2 - start_time_query_2)
 print('------------------------------------------------------------')
 
-"""
--------najczęściej zgłaszane skargi w każdej dzielnicy-------
-0         QUEENS           Rodent  419169
-1  STATEN ISLAND            Sewer  125556
-2       BROOKLYN  Illegal Parking  614950
-3      MANHATTAN         Elevator  456246
-4          BRONX           Rodent  571301
-5    Unspecified  Taxi Compliment  282916
-
-Czas:  77.7641523
-------------------------------------------------------------
-
--------najczęściej zgłaszane skargi w każdej dzielnicy-------
-[...]
-Czas:  126.9398699000003
-------------------------------------------------------------
-
-
--------najczęściej zgłaszane skargi w każdej dzielnicy-------
-               0                       1       2
-0      MANHATTAN      Noise - Commercial  349183
-1       BROOKLYN      Sidewalk Condition  468032
-2          BRONX               APPLIANCE  447610
-3         QUEENS        Dirty Conditions  311845
-4  STATEN ISLAND         Dead/Dying Tree  104573
-5    Unspecified  Street Light Condition  282916
-6                    Noise - Residential       4
-
-Czas:  64.63014332499984
-------------------------------------------------------------
-
-"""
 
 # Urzędy, do których najczęściej zgłaszano skargi
 start_time_query_3 = time.perf_counter()
@@ -174,26 +110,6 @@ print('\n-------urzędy, do których najczęściej zgłaszano skargi-------')
 print(df_query3)
 print('\nCzas: ', end_time_query_3 - start_time_query_3)
 print('-------------------------------------------------------------')
-
-"""
--------urzędy, do których najczęściej zgłaszano skargi-------
-0  New York City Police Department  6276840
-Czas:  73.6223479
--------------------------------------------------------------
--------urzędy, do których najczęściej zgłaszano skargi-------
-[...]
-Czas:  102.4953972000003
--------------------------------------------------------------
-
-
--------urzędy, do których najczęściej zgłaszano skargi-------
-                                                   0        1
-0  Department of Housing Preservation and Develop...  5197486
-
-Czas:  91.393568254
--------------------------------------------------------------
-
-"""
 
 conn.close()
 

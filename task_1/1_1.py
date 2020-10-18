@@ -69,5 +69,5 @@ Name: Agency Name, dtype: int64
 Czas:  1.9665533730000107
 -------------------------------------------------------------
 
-Memory - 5550556549 bytes = ~14.5 gigabytes
+Memory - 5550556549 bytes = ~5.17 gigabytes
 """
