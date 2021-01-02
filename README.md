@@ -2,22 +2,33 @@
 
 
 #### Zadanie 1
-Pobierz dane dotyczące zgłoszeń do władz Nowego Jorku za pośrednictwem numeru 3-1-1:
-https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9
+Celem zadania było sprawdzenie jak radzą sobie metody nie-BigData, z dużymi zbiorami danych.
+#### Zadanie 2
+Program, który implementuje znany z mediów społecznościowych algorytm "Osoby, które możesz znać". Działać na tej zasadzie, że jeżeli dwóch użytkowników ma wielu wspólnych znajomych, to system proponuje im znajomość.
+#### Zadanie 3
+Napisz program, który implementuje algorytm k-średnich z uwzględnieniem dwóch miar: euklidesowej oraz Manhattan.
+#### Zadanie 4
+Program, który implementuje reguły asocjacyjne za pomocą algorytmu A-priori.
+#### Projekt
+Celem projektu jest zbadanie i graficzne podsumowanie wybranych cech zbioru danych dających odpowiedzi na część lub, jeśli to możliwe, na wszystkie poniższe pytania:
+- Kiedy jest najlepsza pora dnia / dzień tygodnia / pora roku na lot, aby zminimalizować opóźnienia?
+- Czy starsze samoloty mają większe opóźnienia?
+- Jak zmienia się liczba osób podróżujących między różnymi lokalizacjami w czasie?
+- Jak wpływa pogoda/prognoza pogody na opóźnienia samolotu?
+- Czy możliwe jest znalezienie „wąskiego gardła” (ang. bottleneck), czyli miejsca, w którym opóźnienie na danym lotnisku wpływa znacząco na opóźnienia na innych lotniskach?
+- Jaki wpływ na opóźnienia i częstotliwość lotów miał zamach terrorystyczny na World Trade Center w 2001 roku i pandemia koronawirusa w 2020 roku?
 
-1.  Na podstawie pliku CSV znajdź:
-    - najczęściej zgłaszane skargi,
-    - najczęściej zgłaszane skargi w każdej dzielnicy,
-    - urzędy, do których najczęściej zgłaszano skargi.
-    Zmierz czasy wykonania kwerend.
+##### Dane
+Dane pochodzą ze strony Ministerstwa Transportu Stanów Zjednoczonych.
+Dane obejmują szczegóły przylotów i odlotów wszystkich lotów komercyjnych w USA, od stycznia 1995 r. do września 2020 r.
+Każdy lot jest opisany maksymalnie przez 110 wartości, które pogrupowane są na następujące kategorie:
+- podstawowe parametry (dzień, miesiąc, rok)
+- dane dotyczące linii lotniczych
+- dane dotyczące lotniska, z którego wyruszył samolot
+- dane dotyczące lotniska docelowego
+- dane dotyczące opóźnień przed lotem, wynikających z lotu i po przylocie
+- przesunięcia, przekierowania lub likwidację lotu
+- statystyk dotyczących lotu (czas lotu, pokonana odległość itp.)
 
-2.  Wczytaj dane z pliku CSV do bazy danych SQL i ponownie wykonaj trzy powyższe kwerendy.
-    - Zmierz czasy wykonania kwerend.
-    - Zmierz łączny czas potrzebny na przekonwertowanie danych oraz wykonanie kwerend.
-    - Porównaj te czasy dla dwóch różnych baz danych (np. MySQL oraz SQLite).
+Obecnie baza ma prawie 70 GB danych, a co miesiąc przybywa około 250 MB rekordów o 400 – 450 tysiącach lotów.
 
-    Ważne! Do łączenia się z bazą danych oraz wykonania kwerend wykorzystaj język Python.
-
-3.  W jaki sposób można zredukować czas wykonania kwerend? Zaimplementuj własne rozwiązanie i przedstaw wyniki.
-
-Ważne! Wykonaj zadanie również wtedy, gdy osiągane rezultaty nie są lepsze od wyjściowych.
