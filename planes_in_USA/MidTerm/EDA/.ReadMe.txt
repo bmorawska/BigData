@@ -1,0 +1,43 @@
+ALLWYNIKI 	-> Wyniki otrzymane ze skryptu BigData.py i przetworzone przez test.py do wygenerowania wykresów.
+BigData.py	-> Skrypt Sparkowy do eksploracji danych. Wyniki zapisuje w odpowiednich plikach .csv
+		   A nastêpnie wyniki s¹ wizualizowne za pomoc¹ skryptu test.py.
+test.py		-> Skrypt s³u¿¹cy do wizualizacji wyników ze Sparka. 
+
+
+Dla was najwa¿niejszy na ten moment jest fragment pliku "BigData.py" od linii 27. do 49.
+(Od 
+print("Spark Configuration...")
+do 
+print("Working...")
+)
+
+Najbardziej istotne elementy to:
+1) Wczytywanie danych
+	file_rdd = sc.textFile("./All/*/*.csv") -> Wczytuje wszystkie CSVki, ze wszytskich folderów, które znajduj¹ siê w folderze ALL
+
+	Do testowania rozwi¹zania stosowa³em mniej danych. 
+	file_rdd = sc.textFile("./All/2018/2018_1.csv")
+	albo
+	file_rdd = sc.textFile("./All/2018/*.csv")
+
+2) Usuwanie headerów
+	Ka¿da CSV zawiera nag³ówek, który siê wczytuje. Trzeba to potem usun¹æ. 
+	Tam jest na pocz¹tku fragment który usuwa to (sprawdza pierwszy wiersz i potem usuwa taki w ca³ym zbiorze).
+	Znalezienie pierwszego wiersza zajmuje duzo czasu i ten sposób mi siê nie podoba. W nowej wersji zrobiê tak, ¿e headera wczytam z pliku, a potem normalnie.
+
+3) filtrowanie
+	W przypadku opóŸnieñ istotne s¹ 
+		- DepDelay
+		- ArrDelay
+		- Cancelled (0/1)
+		- Diverted (0/1)
+W przypadku Cancelled/Diverted  == 1 wtedy nie ma wpisanej wartoœci w DepDelay/ArrDelay (jest "")
+Zdarzaj¹ siê przypadki, ¿e Diverted/Cancelled = 0, a w DepDelay/ArrDelay jest pusto, zamiast liczby ("") 
+i na odwrót dla Diverted/Cancelled = 1 s¹ wpisane opóŸnienia...
+St¹d ten filtr:
+.filter(lambda x : x[2] == '0.00' ).filter(lambda x : x[3] == '0.00').filter(lambda x : x[1] != "")
+
+4) wskazówki
+	W Excelu zrobi³em œci¹gê numerów kolumn. S¹ dwie kolumny, które zawieraj¹ przecinek np. "Florida, FL"
+	i wtedy tworzy siê dodatkowa kolumna, ale uzna³em, ¿e to nie jest problem. Tylko indeksy sie przesune³y.
+	Dlatego lista tych kolumn jest w Excelu. 
