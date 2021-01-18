@@ -1,3 +1,7 @@
+numpy
+matplotlib
+xgboost
+scikit-learn
 mysql
 pandas
 tqdm
