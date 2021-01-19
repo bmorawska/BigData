@@ -1,0 +1,4 @@
+EDA.py - plik s³u¿¹cy do przetwarzania zbioru danych. Produkatmi poszczególnych elementów s¹ pliki csv.
+Visaulization.py - plik s³u¿¹cy do generowania wykresów na podstawie wczeœniej utworzonych plików csv (produkt EDA.py)
+header.csv - nag³ówek zbioru danych, s³u¿acy do usuwania go z wczytanego zbiory.
+Data - folder zawieraj¹cy potrzebne dane do wygenerowania wykresów. Posegregowane zgodnie z kolejnoœci¹ odpowiadj¹c¹ zagadnieniu ktore porusza. Dodatkowo, wszytskie z nich znajduj¹ siê równie¿ w g³ównym folderze (Data).

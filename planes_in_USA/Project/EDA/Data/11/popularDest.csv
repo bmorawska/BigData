@@ -1,0 +1,389 @@
+_1,_2
+Chicago', 9760885
+Atlanta', 8732147
+Dallas/Fort Worth', 6742430
+Houston', 5434115
+Los Angeles', 5213017
+New York', 4945972
+Denver', 4834929
+Phoenix', 4385276
+Washington', 3835825
+Las Vegas', 3636887
+San Francisco', 3565292
+Detroit', 3497069
+Minneapolis', 3339305
+Charlotte', 3281236
+Newark', 3135214
+Boston', 2900740
+Orlando', 2788478
+Salt Lake City', 2766170
+Seattle', 2718610
+Philadelphia', 2470929
+Baltimore', 2363064
+St. Louis', 2271644
+San Diego', 1982476
+Cincinnati', 1785015
+Miami', 1747337
+Tampa', 1674394
+Fort Lauderdale', 1605076
+Portland', 1560550
+Pittsburgh', 1468136
+Cleveland', 1431969
+Nashville', 1414428
+Oakland', 1390912
+Kansas City', 1333145
+San Jose', 1302999
+Dallas', 1297654
+Raleigh/Durham', 1135841
+Austin', 1121323
+Memphis', 1115730
+New Orleans', 1110850
+Sacramento', 1096592
+Santa Ana', 1047017
+Honolulu', 970025
+San Antonio', 943785
+Columbus', 902783
+Indianapolis', 895553
+Albuquerque', 797213
+Ontario', 726771
+Hartford', 688279
+Milwaukee', 685068
+Burbank', 669819
+Jacksonville', 638463
+West Palm Beach/Palm Beach', 610038
+Fort Myers', 594362
+San Juan', 592292
+Reno', 561145
+Buffalo', 540323
+Oklahoma City', 524416
+Omaha', 521003
+Providence', 508059
+El Paso', 497367
+Tucson', 486939
+Louisville', 483804
+Tulsa', 478900
+Anchorage', 473561
+Birmingham', 459524
+Richmond', 436180
+Norfolk', 425957
+Kahului', 404642
+Rochester', 388438
+Little Rock', 361665
+Boise', 350759
+Albany', 326621
+Manchester', 315946
+Spokane', 315777
+Charleston', 315427
+Grand Rapids', 310616
+Greensboro/High Point', 310545
+Dayton', 298065
+Colorado Springs', 297828
+Des Moines', 278199
+Fayetteville', 273327
+Knoxville', 262019
+Syracuse', 259789
+Long Beach', 255646
+Savannah', 242489
+Greer', 241923
+Wichita', 241059
+Palm Springs', 234614
+Jackson/Vicksburg', 227332
+Madison', 225119
+Fresno', 222481
+Kona', 220042
+Lihue', 213802
+Pensacola', 203659
+White Plains', 195923
+Santa Barbara', 193549
+Columbia', 191031
+Huntsville', 188889
+Islip', 185795
+Midland/Odessa', 185230
+Lubbock', 180489
+Baton Rouge', 180285
+Springfield', 173230
+Cedar Rapids/Iowa City', 171978
+Lexington', 168465
+Harrisburg', 162467
+Amarillo', 152101
+Shreveport', 150673
+Akron', 143211
+Corpus Christi', 142446
+Sarasota/Bradenton', 139059
+Burlington', 131910
+Sioux Falls', 126620
+Myrtle Beach', 126444
+Mobile', 125768
+Valparaiso', 123156
+Green Bay', 122722
+Hilo', 113449
+Fairbanks', 111995
+Harlingen/San Benito', 110882
+Allentown/Bethlehem/Easton', 110091
+Fort Wayne', 109814
+Juneau', 108760
+Moline', 106394
+Monterey', 106259
+Fargo', 104751
+Eugene', 103383
+Flint', 101089
+South Bend', 99707
+Gulfport/Biloxi', 99201
+Chattanooga', 98758
+Tallahassee', 97865
+Bozeman', 96693
+Asheville', 95157
+San Luis Obispo', 93286
+Billings', 93045
+Mission/McAllen/Edinburg', 92450
+Lafayette', 89787
+Rapid City', 85467
+Medford', 85119
+Wilmington', 83761
+Panama City', 80709
+Peoria', 80586
+Charlotte Amalie', 80298
+Evansville', 78803
+Charleston/Dunbar', 76575
+Grand Junction', 75497
+Lansing', 74842
+Jackson', 73930
+Missoula', 72944
+Saginaw/Bay City/Midland', 72915
+Montgomery', 72480
+Aspen', 72454
+Killeen', 72366
+Roanoke', 70698
+Traverse City', 70131
+Newport News/Williamsburg', 68412
+Appleton', 67220
+Augusta', 65537
+Pasco/Kennewick/Richland', 65500
+Daytona Beach', 65315
+Kalamazoo', 64410
+Bakersfield', 63940
+Monroe', 63425
+Lincoln', 63123
+Bismarck/Mandan', 62280
+Ketchikan', 60246
+Bloomington/Normal', 59431
+Great Falls', 58023
+Bend/Redmond', 57992
+Alexandria', 54900
+Bangor', 54428
+Kalispell', 54318
+Bristol/Johnson City/Kingsport', 54316
+Idaho Falls', 52905
+Scranton/Wilkes-Barre', 52376
+Arcata/Eureka', 51866
+Gainesville', 51813
+Newburgh/Poughkeepsie', 50649
+Melbourne', 50646
+Duluth', 47944
+St. George', 46835
+Durango', 46115
+Laredo', 46011
+Toledo', 45805
+Abilene', 45688
+Key West', 44982
+Yuma', 44553
+Champaign/Urbana', 44432
+Eagle', 43579
+Charlottesville', 43005
+Fort Smith', 40925
+College Station/Bryan', 40505
+Brownsville', 39670
+Casper', 39597
+Tyler', 38337
+La Crosse', 37910
+Sun Valley/Hailey/Ketchum', 37111
+Minot', 36926
+Helena', 36716
+Waco', 35705
+Montrose/Delta', 35662
+Sitka', 32562
+Grand Forks', 31494
+San Angelo', 30168
+Lawton/Fort Sill', 30136
+Mosinee', 29048
+Carlsbad', 28645
+Hayden', 28136
+Wichita Falls', 27946
+Sanford', 27434
+Lake Charles', 26881
+Flagstaff', 26815
+Redding', 26355
+Dothan', 26351
+St. Petersburg', 26339
+Twin Falls', 26097
+Atlantic City', 25524
+Bethel', 25212
+Aguadilla', 25164
+Elmira/Corning', 24778
+Erie', 24051
+Pocatello', 23974
+Elko', 23732
+Texarkana', 23636
+Nome', 23349
+Jacksonville/Camp Lejeune', 23280
+Kotzebue', 23010
+Santa Maria', 21505
+Barrow', 20344
+Christiansted', 19836
+Modesto', 19720
+Trenton', 19231
+Valdosta', 19074
+Binghamton', 18855
+Brunswick', 18428
+Wrangell', 18028
+Cordova', 17998
+Yakutat', 17996
+Petersburg', 17970
+State College', 17492
+Dubuque', 17470
+Cody', 16920
+Longview', 16711
+Santa Fe', 16622
+Rock Springs', 16333
+Kodiak', 16198
+Deadhorse', 15702
+Marquette', 15670
+Manhattan/Ft. Riley', 15409
+Gillette', 15311
+Punta Gorda', 15207
+Chico', 14945
+Beaumont/Port Arthur', 14924
+Butte', 14849
+Meridian', 14715
+New Bern/Morehead/Beaufort', 14465
+Ithaca/Cortland', 14155
+Williston', 13548
+Roswell', 13211
+Crescent City', 12645
+Gunnison', 12189
+Bellingham', 11664
+Ponce', 11520
+Cedar City', 11296
+Oxnard/Ventura', 11226
+Lewiston', 11084
+Sioux City', 10384
+Lynchburg', 10328
+Inyokern', 10306
+El Centro', 8802
+Hancock/Houghton', 8761
+Pellston', 8508
+Paducah', 8167
+Nantucket', 8156
+North Bend/Coos Bay', 8116
+Muskegon', 8016
+Eau Claire', 7998
+Rhinelander', 7451
+Macon', 7312
+Ashland', 7210
+Worcester', 7091
+Santa Rosa', 6921
+Branson', 6808
+Bemidji', 6578
+Grand Island', 6493
+Aberdeen', 6324
+Joplin', 6310
+Waterloo', 6310
+Klamath Falls', 6288
+Latrobe', 6258
+Florence', 6252
+Hilton Head', 6173
+Jamestown', 5988
+Hibbing', 5888
+Hobbs', 5772
+Brainerd', 5611
+King Salmon', 5437
+Iron Mountain/Kingsfd', 5394
+Unalaska', 5391
+International Falls', 5367
+Garden City', 5271
+Hays', 5143
+Laramie', 5138
+Alpena', 5034
+Sault Ste. Marie', 4847
+Dillingham', 4657
+West Yellowstone', 4629
+New Haven', 4551
+Guam', 4547
+Escanaba', 4503
+Lewisburg', 4422
+Plattsburgh', 4289
+Hattiesburg/Laurel', 3926
+Devils Lake', 3818
+Rockford', 3714
+Dickinson', 3651
+Niagara Falls', 3421
+Pueblo', 3222
+Belleville', 2941
+Naples', 2872
+Watertown', 2816
+Martha\'s Vineyard', 2651
+Mammoth Lakes', 2522
+Victoria', 2521
+CONCORD', 2479
+Stockton', 2384
+Clarksburg/Fairmont', 2365
+Moab', 2252
+Everett', 2141
+Gustavus', 2129
+Salina', 2115
+Stillwater', 2104
+Vernal', 2097
+Cape Girardeau', 2069
+Visalia', 2039
+Tupelo', 1984
+Staunton', 1977
+Adak Island', 1822
+Del Rio', 1814
+Provo', 1806
+North Platte', 1753
+Scottsbluff', 1722
+Quincy', 1655
+Liberal', 1614
+Prescott', 1474
+Kinston', 1456
+Cheyenne', 1437
+Kearney', 1424
+Telluride', 1202
+Ogdensburg', 1165
+Palmdale', 1121
+Pierre', 1114
+Greenville', 978
+Portsmouth', 970
+St. Cloud', 942
+Saipan', 932
+Salem', 880
+Pago Pago', 842
+Concord', 784
+Yakima', 747
+Hickory', 696
+Moses Lake', 675
+St. Augustine', 606
+Hyannis', 568
+Hagerstown', 463
+Topeka', 449
+Riverton/Lander', 378
+Bullhead City', 364
+Dodge City', 353
+Sheridan', 331
+Ogden', 323
+Decatur', 319
+Pinehurst/Southern Pines', 317
+Lanai', 290
+Hoolehua', 288
+Owensboro', 284
+Tunica', 208
+Marathon', 127
+Mayaguez', 90
+Cold Bay', 80
+Williamsport', 66
+Aniak', 64
+St. Mary\'s', 64
+Red River', 46
+Farmington', 5
+Youngstown/Warren', 2
+Fort Collins/Loveland', 1
